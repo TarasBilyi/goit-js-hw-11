@@ -1,0 +1,45 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  border: 1px solid #808080;
+}
+
+.gallery-image {
+  height: 152px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.gallery-info-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.gallery-info-list {
+  text-align: center;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.info-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
