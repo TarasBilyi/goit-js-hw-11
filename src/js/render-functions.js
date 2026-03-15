@@ -51,7 +51,14 @@ function createImage({
 }
 
 export function createGallery(images) {
-  if (images.length === 0) return;
+  if (!gallery) return;
+
+  if (images.length === 0) {
+    gallery.innerHTML = '';
+    lightbox.refresh();
+    return;
+  }
+
   const markup = images.map(createImage).join('');
   gallery.innerHTML = markup;
   lightbox.refresh();
