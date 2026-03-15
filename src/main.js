@@ -29,10 +29,11 @@ refs.searchForm.addEventListener('submit', e => {
 
   showLoader();
 
+  clearGallery();
+
   getImagesByQuery(query)
     .then(res => {
       const images = res.hits;
-      clearGallery();
       if (images.length === 0) {
         iziToast.info({
           title: 'Info',

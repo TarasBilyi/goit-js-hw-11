@@ -51,6 +51,7 @@ function createImage({
 }
 
 export function createGallery(images) {
+  if (images.length === 0) return;
   const markup = images.map(createImage).join('');
   gallery.innerHTML = markup;
   lightbox.refresh();
