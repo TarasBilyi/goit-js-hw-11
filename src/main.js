@@ -58,4 +58,6 @@ refs.searchForm.addEventListener('submit', e => {
     .finally(() => {
       hideLoader();
     });
+
+  refs.searchForm.reset();
 });
